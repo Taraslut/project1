@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+
+{% block content %}
+    {% if message %}
+    <h2> {{ message }}</h2>
+    {% endif %}
+    <form action="\login" method="post">
+        <input type="text" name="name" content="name">
+        <input type="password" name="password" content="password">
+        <input type="submit" name="Log in">
+    </form>
+{% endblock %}

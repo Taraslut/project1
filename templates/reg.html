@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1> Create new user: </h1>
+    <form action="\save" method="post">
+        <input type="text" name="name">
+        <input type="password" name="password1" content="Enter a secret">
+        <input type="password" name="password2" content="Confirm the same secret">
+        <input type="submit" name="Create">
+    </form>
+
+{% endblock %}
